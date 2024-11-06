@@ -1,0 +1,57 @@
+<!--Contact Me Template-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Calling media scales, css files, and identifying charset -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="style-mobile.css" rel="stylesheet" type="text/css" media="screen and (max-width:600px)">
+    <link href="style-tablet.css" rel="stylesheet" type="text/css" media="screen and (min-width: 601px) and (max-width: 900px)">
+    <link href="style-laptop.css" rel="stylesheet" type="text/css" media="screen and (min-width: 901px)">
+    
+    <title>Contact Me</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h4>
+                <!-- Linking the other pages -->
+                <a href="/">Home</a>
+                <a href="/about">About Me</a>
+                <a href="/project">Project</a>
+                <a href="/contact">Contact Me</a>
+            </h4>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Contact Form -->
+        <h1>Contact Me</h1>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+            </div>
+
+            <input type="submit" value="Submit" class="submit-button">
+        </form>
+    </main>
+
+    <!-- Footer section -->
+    <footer style="text-align: left;">
+        <p>Contact: <a href="mailto:mohammed.alikhan1@ontariotechu.net">mohammed.alikhan1@ontariotechu.net</a></p>
+        <p>&copy; 2024 Mohammed Ali Khan. All rights stolen from the gods for you mi amor!</p>
+    </footer>
+</body>
+</html>
