@@ -13,22 +13,9 @@ app.set('views', path.join(__dirname, 'views'));
 // Serve static files (like CSS, images, JS) from the "public" directory
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Define routes
-app.get('/', (req, res) => {
-  res.render('index', { title: 'Home' });
-});
-
-app.get('/about', (req, res) => {
-  res.render('about', { title: 'About Me' });
-});
-
-app.get('/project', (req, res) => {
-  res.render('project', { title: 'Projects' });
-});
-
-app.get('/contact', (req, res) => {
-  res.render('contact', { title: 'Contact Me' });
-});
+// Import and use the routes from the controller
+const siteRoutes = require('./controllers/index');
+app.use('/', siteRoutes); // This sets up the routes to be used
 
 // Start the server (This replaces the need for the server.js file)
 app.listen(port, () => {
