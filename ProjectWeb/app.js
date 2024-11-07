@@ -4,7 +4,7 @@ const path = require('path');
 const layouts = require('express-ejs-layouts');
 
 const app = express();
-const indexRouter = require('./controllers/index');
+const indexRouter = require('./public/controllers/index');
 
 // Set up view engine
 app.set('view engine', 'ejs');
