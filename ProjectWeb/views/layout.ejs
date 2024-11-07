@@ -1,0 +1,39 @@
+<!-- views/layout.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link href="/stylesheets/style.css" rel="stylesheet" type="text/css">
+    <link href="/stylesheets/style-mobile.css" rel="stylesheet" type="text/css" media="screen and (max-width:600px)">
+    <link href="/stylesheets/style-tablet.css" rel="stylesheet" type="text/css" media="screen and (min-width: 601px) and (max-width: 900px)">
+    <link href="/stylesheets/style-laptop.css" rel="stylesheet" type="text/css" media="screen and (min-width: 901px)">
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <h4>
+            <a href="/">Home</a>
+            <a href="/project">Projects</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+            </h4>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <%- body %>
+    </main>
+
+    <!-- Footer Section -->
+   <footer>
+        <p>Contact: <a href="mailto:mohammed.alikhan1@ontariotechu.net">mohammed.alikhan1@ontariotechu.net</a></p>
+        <p>&copy; 2024 Mohammed Ali Khan. All rights stolen from the gods for you mi amor!</p>
+        <a href="https://github.com/mohdkhan768" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/mohammed-ali-khan-646381160" target="_blank">LinkedIn</a>
+    </footer>
+</body>
+</html>
